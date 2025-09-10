@@ -1,0 +1,33 @@
+.welcome {
+    background-color: var(--bg-primary);
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 23px;
+    }
+}
+
+.courses .container.grid {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses .container.grid p {
+    margin-left: var(--spacing-small);
+    margin-right: var(--spacing-small);
+}
+
+.courses h2 {
+    padding-top: var(--spacing-large);
+}
+
+.courses h2, .courses p {
+    text-align: center;
+}

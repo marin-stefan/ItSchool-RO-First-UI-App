@@ -4,8 +4,96 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Cursuri</title>
+        <meta
+            name="description"
+            content="Prima aplicatie de UI folosind doar HTML&CSS"
+        />
+        <!-- includem fonturi -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- includem iconitele material icon -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+            rel="stylesheet"
+        />
+        <!-- includem css-urile noastre -->
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/courses.css" />
     </head>
     <body>
-        <h2>Cursuri</h2>
+        <header>
+            <nav>
+                <div class="container">
+                    <a href="../index.html" class="logo-link">
+                        <img
+                            src="../img/itschool-logo.png"
+                            alt="itschool logo"
+                        />
+                    </a>
+                    <div class="menu-icon-container">
+                        <!-- inseram iconita de meniu - hamburgermenu + un checkbox folosit ca si 
+                         hack de css ca sa aratam/ascundem meniu pe mobile-->
+                        <span class="material-symbols-outlined menu-icon">
+                            menu
+                        </span>
+                        <input type="checkbox" />
+                        <ul>
+                            <li>
+                                <a href="courses.html">Cursuri Online</a>
+                            </li>
+                            <li class="about-us">
+                                <a href="about.html"
+                                    >Despre Noi
+                                    <!-- inseram iconita de arrow down -->
+                                    <span
+                                        class="material-symbols-outlined arrow-down-icon"
+                                    >
+                                        arrow_drop_down
+                                    </span>
+                                </a>
+                                <!-- inseram submeniul afisat la hover -->
+                                <div class="submenu">
+                                    <a href="../index.html">Homepage</a>
+                                    <a href="about.html">Despre noi</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="welcome">
+                <div class="container">
+                    <h1>Cursuri IT Online, live</h1>
+                </div>
+            </section>
+            <section class="courses">
+                <div class="container grid">
+                    <h2>Programe de pregatire</h2>
+                    <p>
+                        Acum este posibil să te pregătești pentru o carieră în
+                        IT din confortul și siguranța casei tale. Cursurile se
+                        vor desfășura în mediul online, prin
+                        <strong>sesiuni de training interactive, live,</strong>
+                        alături de trainer. Dacă îți dorești să faci parte din
+                        această industrie, începe astăzi un program de pregătire
+                        care îți oferă șanse reale de angajare după absolvire.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>It School Romania 2025. Toate drepturile rezervate</p>
+            </div>
+        </footer>
     </body>
 </html>
