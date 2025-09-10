@@ -1,0 +1,206 @@
+/*  welcome section stilizare */
+.welcome {
+    background-color: var(--bg-primary);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1, .welcome p {
+    color: var(--text-white);
+}
+
+.welcome p{
+    font-size: var(--fs-large);
+    margin-bottom: var(--spacing-medium);
+}
+
+.welcome p:last-of-type {
+    margin-bottom: var(--spacing-xl);
+}
+
+.welcome p span {
+    color: var(--text-secondary);
+}
+
+.welcome img {
+    height: 24px;
+    width: auto;
+    margin-left: var(--spacing-medium);
+    position: relative;
+    top: var(--spacing-tiny);
+}
+
+.welcome .container {
+    display: flex;
+    flex-direction: column;
+    /* facem acest container sa ocupe tot spatiul disponibil */
+    flex-grow: 1;
+}
+
+.welcome a {
+    color: var(--text-light);
+    background-color: var(--button-color);
+    font-size: var(--fs-medium);
+    text-transform: uppercase;
+    text-align: center;
+    padding: var(--spacing-medium);
+    border: 2px solid var(--button-color);
+    border-radius: 5px;
+    width: 260px;
+}
+
+.welcome a:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .welcome img {
+        display: block;
+        margin-top: var(--spacing-medium);
+        margin-left: var(--spacing-small);
+    }
+
+    .welcome h1 {
+        font-size: 40px;
+    }
+
+    .welcome p:last-of-type {
+        margin-bottom: 0;
+    }
+    /* ascundem butonul pe mobile */
+    .welcome a {
+        display: none;
+        /* pentru a ascunde un element mai putem folosi visibility:hidden */
+    }
+}
+
+.courses h2 {
+    text-align: center;
+    margin: var(--spacing-large) 0;
+}
+
+/* fara spatiu inseamna ca acste 2 clase sunt pe acelasi element */
+.courses .container.grid {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.courses .courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-large);
+}
+
+.courses .course-wrapper {
+    width: calc(100% / 3);
+    padding-left: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+}
+
+.courses .course {
+    width: 100%;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+}
+
+.courses h3 {
+    color: var(--text-primary);
+    font-weight: 400;
+}
+
+.courses span {
+    font-size: var(--fs-medium);
+    color: var(--text-dark);
+}
+
+/* centram iconitele pe verticala cu vertical align*/
+.courses .material-symbols-outlined {
+    vertical-align: middle;
+}
+
+.courses .date, .courses .place {
+    padding: var(--spacing-tiny);
+}
+
+.courses .place {
+    background-color: var(--text-secondary);
+    margin-left: var(--spacing-tiny);
+}
+
+.courses .course, .courses h3, .courses .badges {
+    margin-bottom: var(--spacing-medium);
+}
+
+.courses .content {
+    padding: var(--spacing-medium) var(--spacing-small);
+    border-bottom: 4px solid var(--button-color);
+}
+
+@media (max-width: 992px) {
+    .courses .course-wrapper {
+        width: 50%;
+    };
+}
+
+@media (max-width: 768px) {
+    .courses .course-wrapper {
+        width: 100%;
+    };
+}
+
+/* stilizare sectiune cine suntem */
+
+.who-we-are {
+    background-color: var(--bg-secondary);
+}
+
+.who-we-are .container.grid {
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.who-we-are h2 {
+    padding-top: var(--spacing-large);
+}
+
+.who-we-are h2, .who-we-are p {
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+}
+
+.who-we-are p {
+    margin-right: var(--spacing-small);
+    margin-left: var(--spacing-small);
+}
+
+.who-we-are .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-large);
+}
+
+.who-we-are img {
+    width: 100%;
+    height: auto;
+}
+
+.who-we-are .image-wrapper {
+    width: calc(100% / 3);
+    padding-right: var(--spacing-small);
+    padding-left: var(--spacing-small);
+    padding-bottom: var(--spacing-medium);
+}
+
+@media (max-width: 992px) {
+    .who-we-are .image-wrapper {
+        width: 50%;
+    };
+}
+
+@media (max-width: 768px) {
+    .who-we-are .image-wrapper {
+        width: 100%;
+    };
+}

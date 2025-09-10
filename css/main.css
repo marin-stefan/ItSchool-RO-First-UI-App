@@ -249,3 +249,39 @@ footer p {
     font-size: var(--fs-small);
     padding: var(--spacing-medium) 0;
 }
+
+/*  stillizare sectiune parteneri */
+
+.partners h2 {
+    text-align: center;
+    padding-top: var(--spacing-large);
+}
+
+.partners h2, .partners .partners-container {
+    margin-bottom: var(--spacing-large);
+}
+
+.partners .partners-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 var(--spacing-xl);
+}
+
+.partners .image-wrapper {
+    width: 100px;
+    margin-left: var(--spacing-xl);
+    margin-right: var(--spacing-xl);
+}
+
+.partners img {
+    width: 100%;
+    height: auto;
+    /* facem pozele gri */
+    filter: grayscale(100%);
+}
+
+.partners img:hover {
+    /* facem pozele color inapoi */
+    filter: grayscale(0);
+}
