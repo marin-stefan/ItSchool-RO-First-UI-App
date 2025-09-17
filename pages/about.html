@@ -4,8 +4,168 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Despre noi</title>
+        <meta
+            name="description"
+            content="Prima aplicatie de UI folosind doar HTML&CSS"
+        />
+        <!-- includem fonturi -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- includem iconitele material icon -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+            rel="stylesheet"
+        />
+        <!-- includem css-urile noastre -->
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/about.css" />
     </head>
     <body>
-        <h2>Despre noi</h2>
+        <header>
+            <nav>
+                <div class="container">
+                    <a href="../index.html" class="logo-link">
+                        <img
+                            src="../img/itschool-logo.png"
+                            alt="itschool logo"
+                        />
+                    </a>
+                    <div class="menu-icon-container">
+                        <!-- inseram iconita de meniu - hamburgermenu + un checkbox folosit ca si 
+                         hack de css ca sa aratam/ascundem meniu pe mobile-->
+                        <span class="material-symbols-outlined menu-icon">
+                            menu
+                        </span>
+                        <input type="checkbox" />
+                        <ul>
+                            <li>
+                                <a href="courses.html">Cursuri Online</a>
+                            </li>
+                            <li class="about-us">
+                                <a href="about.html"
+                                    >Despre Noi
+                                    <!-- inseram iconita de arrow down -->
+                                    <span
+                                        class="material-symbols-outlined arrow-down-icon"
+                                    >
+                                        arrow_drop_down
+                                    </span>
+                                </a>
+                                <!-- inseram submeniul afisat la hover -->
+                                <div class="submenu">
+                                    <a href="../index.html">Homepage</a>
+                                    <a href="about.html">Despre noi</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="welcome">
+                <div class="container">
+                    <h1>Trainerii It School</h1>
+                </div>
+            </section>
+
+            <section class="trainers">
+                <div class="container grid">
+                    <div class="trainers-container">
+                        <div class="trainer-wrapper">
+                            <div class="trainer">
+                                <div class="img-wrapper">
+                                    <img
+                                        src="../img/razvan.jpeg"
+                                        alt="Răzvan Cîrlugea"
+                                    />
+                                </div>
+                                <h3>Răzvan Cîrlugea</h3>
+                                <p>
+                                    "Specialitatea mea este Front-End
+                                    Development-ul, așadar limbajul meu de
+                                    programare de suflet este JavaScript.
+                                    Bineînțeles, dacă vorbim de Front-End, alți
+                                    camarazi buni de-ai mei sunt HTML și CSS
+                                    (chit că nu sunt limbaje de programare)."
+                                    Răzvan a devenit trainer înainte de a lucra
+                                    full-time ca și programator 😀.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="trainer-wrapper">
+                            <div class="trainer">
+                                <div class="img-wrapper">
+                                    <img
+                                        src="../img/marius.png"
+                                        alt="Marius Furcic"
+                                    />
+                                </div>
+                                <h3>Marius Furcic</h3>
+                                <p>
+                                    Marius este Front-end Web Developer și
+                                    lucrează în domeniu de mai bine de 6 ani.
+                                    Este mereu în căutare de noi provocări și nu
+                                    se abate din calea lor până nu găsește
+                                    soluția. Motto-ul său este “Calculatorul nu
+                                    greșește niciodată.”
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="trainer-wrapper">
+                            <div class="trainer">
+                                <div class="img-wrapper">
+                                    <img
+                                        src="../img/alex.jpeg"
+                                        alt="Alex Zmed"
+                                    />
+                                </div>
+                                <h3>Alex Zmed</h3>
+                                <p>
+                                    Alex lucrează în domeniu de peste 6 ani.
+                                    Fiind pasionat de tot ceea ce ține de web,
+                                    Alex este Front-end Developer în timpul
+                                    zilei, mentor IT School după lucru și
+                                    iubitor de somn pe timpul nopții.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="trainer-wrapper">
+                            <div class="trainer">
+                                <div class="img-wrapper">
+                                    <img
+                                        src="../img/ema.jpeg"
+                                        alt="Ema Enescu"
+                                    />
+                                </div>
+                                <h3>Ema Enescu</h3>
+                                <p>
+                                    Ema este Front-end Web Developer și
+                                    activează în domeniul IT de mai bine de 6
+                                    ani. Iubește la fel de mult codul curat cât
+                                    și o carte bună sau o călătorie la mare
+                                    depărtare de casă.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>It School Romania 2025. Toate drepturile rezervate</p>
+            </div>
+        </footer>
     </body>
 </html>
