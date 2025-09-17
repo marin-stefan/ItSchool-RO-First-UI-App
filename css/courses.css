@@ -19,15 +19,100 @@
     padding: var(--spacing-medium) var(--spacing-small);
 }
 
-.courses .container.grid p {
+.courses .container.grid p.main-paragraph {
     margin-left: var(--spacing-small);
     margin-right: var(--spacing-small);
+    margin-bottom: var(--spacing-medium);
 }
 
 .courses h2 {
     padding-top: var(--spacing-large);
 }
 
-.courses h2, .courses p {
+.courses h2, .courses p.main-paragraph {
     text-align: center;
 }
+
+.courses .courses-container {
+    margin-bottom: var(--spacing-large);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses .course-wrapper {
+    width: calc(100% / 3);
+    padding-right: var(--spacing-small);
+    padding-left: var(--spacing-small);
+}
+
+.courses .course {
+    width: 100%;
+    padding: var(--spacing-tiny);
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-bottom: var(--spacing-medium);
+}
+
+.courses .presentation-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--spacing-large);
+}
+
+.courses h3 {
+    color: var(--text-primary);
+}
+
+.courses .microsoft-logo {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.courses span, .courses .certification {
+    font-size: var(--fs-medium);
+    color: #666;
+}
+
+.courses .material-symbols-outlined {
+    vertical-align: middle;
+}
+
+.courses h3, .courses .certification, 
+.courses .details, .courses a {
+    margin-bottom: var(--spacing-medium);
+}
+
+.courses .content {
+    padding: 0 var(--spacing-small);
+}
+
+.courses a {
+    font-size: var(--fs-medium);
+    text-align: center;
+    background-color: var(--button-color);
+    color: var(--text-white);
+    border: 1px solid var(--button-color);
+    border-radius: 5px;
+    padding: var(--spacing-tiny);
+    width: 100px;
+}
+
+.courses .microsoft-logo, 
+.courses .duration-month,
+.courses .duration-hours {
+    margin-left: var(--spacing-small);
+}
+
+@media (max-width: 992px) {
+    .courses .course-wrapper {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses .course-wrapper {
+        width: 100%;
+    }
+}
+
