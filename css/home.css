@@ -48,7 +48,7 @@
     text-align: center;
     padding: var(--spacing-medium);
     border: 2px solid var(--button-color);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     width: 260px;
 }
 
@@ -102,7 +102,7 @@
 .courses .course {
     width: 100%;
     border: 1px solid #DDD;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: var(--spacing-tiny);
 }
 
