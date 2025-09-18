@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Programare C++</title>
+        <meta
+            name="description"
+            content="Prima aplicatie de UI folosind doar HTML&CSS"
+        />
+        <!-- includem fonturi -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- includem iconitele material icon -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+            rel="stylesheet"
+        />
+        <!-- includem css-urile noastre -->
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/course-detail.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <a href="../../index.html" class="logo-link">
+                        <img
+                            src="../../img/itschool-logo.png"
+                            alt="itschool logo"
+                        />
+                    </a>
+                    <div class="menu-icon-container">
+                        <!-- inseram iconita de meniu - hamburgermenu + un checkbox folosit ca si 
+                         hack de css ca sa aratam/ascundem meniu pe mobile-->
+                        <span class="material-symbols-outlined menu-icon">
+                            menu
+                        </span>
+                        <input type="checkbox" />
+                        <ul>
+                            <li>
+                                <a href="../courses.html">Cursuri Online</a>
+                            </li>
+                            <li class="about-us">
+                                <a href="../about.html"
+                                    >Despre Noi
+                                    <!-- inseram iconita de arrow down -->
+                                    <span
+                                        class="material-symbols-outlined arrow-down-icon"
+                                    >
+                                        arrow_drop_down
+                                    </span>
+                                </a>
+                                <!-- inseram submeniul afisat la hover -->
+                                <div class="submenu">
+                                    <a href="../../index.html">Homepage</a>
+                                    <a href="../about.html">Despre noi</a>
+                                </div>
+                            </li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="welcome">
+                <div class="container">
+                    <h1>Programare C++</h1>
+                </div>
+            </section>
+
+            <div class="container">
+                <section class="course-details">
+                    <div class="course-img">
+                        <img src="../../img/cplus.jpg" alt="C++" />
+                    </div>
+                    <div class="course-content">
+                        <p>
+                            Programarea în C++ se referă la scrierea de cod
+                            utilizând limbajul C++, un limbaj de programare de
+                            nivel mediu, compilat, cu performanțe ridicate și
+                            suport excelent pentru programarea orientată pe
+                            obiecte. Este un limbaj puternic și flexibil,
+                            utilizat pe scară largă în dezvoltarea de aplicații
+                            software complexe, jocuri video, sisteme embedded,
+                            aplicații desktop și chiar soluții critice pentru
+                            industrie. Datorită vitezei de execuție și
+                            controlului asupra resurselor hardware, C++ rămâne
+                            unul dintre cele mai populare și longevive limbaje
+                            de programare.
+                        </p>
+                        <p>Caracteristici cheie:</p>
+                        <ul>
+                            <li>
+                                Performanță și eficiență: C++ permite scrierea
+                                de cod optimizat, aproape de nivelul
+                                hardware-ului, ceea ce îl face potrivit pentru
+                                aplicații unde viteza este esențială.
+                            </li>
+                            <li>
+                                Compilat: Codul C++ trebuie compilat înainte de
+                                a fi rulat, rezultând executabile rapide și
+                                independente de interpretor.
+                            </li>
+                            <li>
+                                Multi-paradigmă: Suportă programarea
+                                procedurală, orientată pe obiecte și chiar
+                                generică (prin template-uri).
+                            </li>
+                            <li>
+                                Control asupra memoriei: Oferă posibilitatea de
+                                a gestiona direct resursele de memorie prin
+                                pointeri, alocare și dealocare manuală.
+                            </li>
+                            <li>
+                                Portabilitate: Programele scrise în C++ pot fi
+                                rulate pe diferite platforme, cu ajustări minime
+                                ale codului sursă.
+                            </li>
+                            <li>
+                                Biblioteci și framework-uri vaste: Dispune de o
+                                colecție uriașă de biblioteci standard și
+                                externe, de la manipularea fișierelor și
+                                algoritmi avansați până la dezvoltare grafică și
+                                rețelistică.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>It School Romania 2025. Toate drepturile rezervate</p>
+            </div>
+        </footer>
+    </body>
+</html>

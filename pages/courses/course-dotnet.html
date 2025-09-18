@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Programare .NET</title>
+        <meta
+            name="description"
+            content="Prima aplicatie de UI folosind doar HTML&CSS"
+        />
+        <!-- includem fonturi -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- includem iconitele material icon -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+            rel="stylesheet"
+        />
+        <!-- includem css-urile noastre -->
+        <link rel="stylesheet" href="../../css/main.css" />
+        <link rel="stylesheet" href="../../css/course-detail.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="container">
+                    <a href="../../index.html" class="logo-link">
+                        <img
+                            src="../../img/itschool-logo.png"
+                            alt="itschool logo"
+                        />
+                    </a>
+                    <div class="menu-icon-container">
+                        <!-- inseram iconita de meniu - hamburgermenu + un checkbox folosit ca si 
+                         hack de css ca sa aratam/ascundem meniu pe mobile-->
+                        <span class="material-symbols-outlined menu-icon">
+                            menu
+                        </span>
+                        <input type="checkbox" />
+                        <ul>
+                            <li>
+                                <a href="../courses.html">Cursuri Online</a>
+                            </li>
+                            <li class="about-us">
+                                <a href="../about.html"
+                                    >Despre Noi
+                                    <!-- inseram iconita de arrow down -->
+                                    <span
+                                        class="material-symbols-outlined arrow-down-icon"
+                                    >
+                                        arrow_drop_down
+                                    </span>
+                                </a>
+                                <!-- inseram submeniul afisat la hover -->
+                                <div class="submenu">
+                                    <a href="../../index.html">Homepage</a>
+                                    <a href="../about.html">Despre noi</a>
+                                </div>
+                            </li>
+                            <li><a href="../contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="welcome">
+                <div class="container">
+                    <h1>Programare .NET</h1>
+                </div>
+            </section>
+
+            <div class="container">
+                <section class="course-details">
+                    <div class="course-img">
+                        <img src="../../img/dotnet.jpg" alt="Dot Net" />
+                    </div>
+                    <div class="course-content">
+                        <p>
+                            Programarea în .NET se referă la dezvoltarea de
+                            aplicații folosind platforma .NET, un cadru de lucru
+                            puternic și flexibil dezvoltat de Microsoft. .NET
+                            permite crearea de aplicații desktop, web, mobile,
+                            cloud și jocuri video, oferind suport pentru mai
+                            multe limbaje de programare precum C#, F# și VB.NET.
+                            Este apreciat pentru ușurința integrării cu
+                            ecosistemul Microsoft, performanța ridicată și setul
+                            bogat de librării și instrumente puse la dispoziția
+                            dezvoltatorilor.
+                        </p>
+                        <p>Caracteristici cheie:</p>
+                        <ul>
+                            <li>
+                                Versatilitate: Permite dezvoltarea de aplicații
+                                pentru multiple platforme, inclusiv Windows,
+                                Linux, macOS, Android și iOS prin intermediul
+                                .NET Core și .NET MAUI.
+                            </li>
+                            <li>
+                                Multi-limbaj: Oferă suport pentru mai multe
+                                limbaje, dintre care cel mai popular este C#, un
+                                limbaj modern și orientat pe obiecte.
+                            </li>
+                            <li>
+                                Framework bogat: Include o colecție extinsă de
+                                librării pentru manipularea datelor, acces la
+                                rețea, securitate, interfețe grafice și multe
+                                altele.
+                            </li>
+                            <li>
+                                Integrare excelentă: Se integrează nativ cu
+                                serviciile Microsoft, precum Azure, Office sau
+                                SQL Server, facilitând dezvoltarea de soluții
+                                enterprise.
+                            </li>
+                            <li>
+                                Comunitate și suport: Beneficiază de o
+                                comunitate globală activă și de suport oficial
+                                puternic din partea Microsoft.
+                            </li>
+                            <li>
+                                Performanță și scalabilitate: Aplicațiile
+                                dezvoltate în .NET pot rula rapid și pot fi
+                                scalate pentru a susține un număr mare de
+                                utilizatori și procese complexe.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p>It School Romania 2025. Toate drepturile rezervate</p>
+            </div>
+        </footer>
+    </body>
+</html>
