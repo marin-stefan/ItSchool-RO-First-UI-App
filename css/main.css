@@ -281,9 +281,12 @@ footer p {
     height: auto;
     /* facem pozele gri */
     filter: grayscale(100%);
+    transition: transform .2s;
 }
 
 .partners img:hover {
     /* facem pozele color inapoi */
     filter: grayscale(0);
+    transform: scale(2.5);
+    cursor: pointer;
 }
