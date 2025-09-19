@@ -23,6 +23,8 @@
 }
 
 .course-img {
+    padding-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-large);
     width: 30%;
 }
 
@@ -40,11 +42,11 @@
 .course-content ul {
     list-style-type: circle;
     margin: var(--spacing-medium);
-    /* padding: var(--spacing-medium); */
 }
 
 .course-content p:first-of-type {
     margin-bottom: var(--spacing-medium);
+    margin-top: var(--spacing-large);
 }
 
 @media (max-width: 768px) {
@@ -54,4 +56,39 @@
     .course-content, .course-img {
         width: 100%;
     }
+}
+
+.course-content .content {
+    padding: 0 var(--spacing-small);
+}
+
+.course-content h3 {
+    color: var(--text-primary);
+    margin-top: var(--spacing-small);
+}
+
+.course-content .microsoft-logo {
+    width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.course-content span, .course-content .certification {
+    font-size: var(--fs-medium);
+    color: #666;
+}
+
+.course-content .microsoft-logo, 
+.course-content .duration-month,
+.course-content .duration-hours {
+    margin-left: var(--spacing-small);
+}
+
+.course-content h3, .course-content .certification, 
+.course-content .details {
+    margin-bottom: var(--spacing-medium);
+}
+
+.course-content li {
+    padding: var(--spacing-tiny);
 }
