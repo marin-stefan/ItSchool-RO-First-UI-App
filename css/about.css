@@ -21,14 +21,14 @@
 }
 
 .trainers .trainer-wrapper {
-    width: 25%;
+    width: calc(100% / 3);
     padding: var(--spacing-small);
 }
 
 
 
 .trainers .trainer {
-    min-height: 350px;
+    min-height: 460px;
     width: 100%;
     padding: var(--spacing-small);
     border: 1px solid #DDD;
@@ -75,25 +75,15 @@
 
 @media (max-width: 992px) {
     .trainers .trainer-wrapper {
-        width: calc(100% / 3);
-    }
-}
-
-@media (max-width: 768px) {
-    .trainers .trainer-wrapper {
         width: 50%;
     }
 
     .trainers .trainer {
-        min-height: 310px;
-    }
-
-    .welcome h1 {
-        font-size: 23px;
+        min-height: 420px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     .trainers .trainer-wrapper {
         width: 100%;
     }
@@ -102,10 +92,16 @@
         min-height: 0;
     }
 
+    .welcome h1 {
+        font-size: 23px;
+    }
+
     .trainers .trainer p {
         margin-bottom: var(--spacing-medium);
     }
 }
+
+
 
 
 
