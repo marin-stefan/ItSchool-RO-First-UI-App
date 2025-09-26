@@ -94,15 +94,22 @@
     text-align: center;
     background-color: var(--button-color);
     color: var(--text-white);
-    border: 1px solid var(--text-secondary);
+    border: 1px solid var(--button-color);
     border-radius: var(--border-radius);
     padding: var(--spacing-tiny);
     width: 100px;
 }
 
+.courses .img-link-details {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 .courses a:hover {
     color: var(--text-secondary);
-    border: 1px solid var(--button-color);
 }
 
 .courses .microsoft-logo, 
