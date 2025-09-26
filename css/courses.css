@@ -48,7 +48,7 @@
 .courses .course {
     width: 100%;
     padding: var(--spacing-tiny);
-    border: 1px solid #DDD;
+    border: 1px solid var(--text-secondary);
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing-medium);
 }
@@ -57,6 +57,8 @@
     width: 100%;
     height: auto;
     margin-bottom: var(--spacing-large);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
 }
 
 .courses h3 {
@@ -92,10 +94,15 @@
     text-align: center;
     background-color: var(--button-color);
     color: var(--text-white);
-    border: 1px solid var(--button-color);
+    border: 1px solid var(--text-secondary);
     border-radius: var(--border-radius);
     padding: var(--spacing-tiny);
     width: 100px;
+}
+
+.courses a:hover {
+    color: var(--text-secondary);
+    border: 1px solid var(--button-color);
 }
 
 .courses .microsoft-logo, 
